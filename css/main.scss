@@ -1,0 +1,16 @@
+// out: main.css
+body {
+    text-align: center;
+    background-color: #f8f9f9;
+    canvas {
+        margin: 0 auto;
+    }
+    .panel {
+        position: absolute;
+        background-color: #FFFFFF;
+        border: 2px solid #e7e7e7;
+        width: 300px;
+        height: 500px;
+        display: none;
+    }
+}

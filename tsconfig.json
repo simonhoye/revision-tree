@@ -1,0 +1,32 @@
+{
+    "version": "1.5.0-alpha",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./js/panel.ts",
+        "./js/references.ts",
+        "./js/revision-tree.ts",
+        "./js/revision.ts",
+        "./typings/createjs-lib/createjs-lib.d.ts",
+        "./typings/createjs/createjs.d.ts",
+        "./typings/easeljs/easeljs.d.ts",
+        "./typings/jquery/jquery.d.ts",
+        "./typings/preloadjs/preloadjs.d.ts",
+        "./typings/raphael/raphael.d.ts",
+        "./typings/soundjs/soundjs.d.ts",
+        "./typings/tsd.d.ts",
+        "./typings/tweenjs/tweenjs.d.ts"
+    ]
+}
