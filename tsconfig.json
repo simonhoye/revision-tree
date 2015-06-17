@@ -24,7 +24,6 @@
         "./typings/easeljs/easeljs.d.ts",
         "./typings/jquery/jquery.d.ts",
         "./typings/preloadjs/preloadjs.d.ts",
-        "./typings/raphael/raphael.d.ts",
         "./typings/soundjs/soundjs.d.ts",
         "./typings/tsd.d.ts",
         "./typings/tweenjs/tweenjs.d.ts"

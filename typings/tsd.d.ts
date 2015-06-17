@@ -4,3 +4,4 @@
 /// <reference path="preloadjs/preloadjs.d.ts" />
 /// <reference path="soundjs/soundjs.d.ts" />
 /// <reference path="raphael/raphael.d.ts" />
+/// <reference path="d3/d3.d.ts" />

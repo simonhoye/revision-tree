@@ -22,6 +22,9 @@
     },
     "raphael/raphael.d.ts": {
       "commit": "5156f56a6efe779c31cfcc8e54a22b409ed63d77"
+    },
+    "d3/d3.d.ts": {
+      "commit": "faff1866df10486a4c50904236183edc62ca841e"
     }
   }
 }

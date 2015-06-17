@@ -22,7 +22,9 @@ var RevisionTree = (function (_super) {
                 var line = revision.connectToDot(this.previousRevisionOnStage);
                 this._linesContainer.addChild(line);
             }
-            if (this.previousPublicRevisionOnStage && revision.revisionType === "public") {
+            if (this.previousPublicRevisionOnStage
+                && revision.revisionType === "public"
+                && this.previousPublicRevisionOnStage !== this.previousRevisionOnStage) {
                 var publicLine = revision.connectToDot(this.previousPublicRevisionOnStage);
                 this._linesContainer.addChild(publicLine);
             }
@@ -53,7 +55,7 @@ var RevisionTree = (function (_super) {
         else {
             xPos = e.currentTarget.x + canvasPosition.left + 50;
         }
-        var yPos = 20;
+        var yPos = canvasPosition.top + 20;
         $('.panel').css({ left: xPos, top: yPos }).show();
         this.update();
     };

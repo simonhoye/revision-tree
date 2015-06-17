@@ -21,7 +21,9 @@ class RevisionTree extends createjs.Stage {
                 var line:createjs.Shape = revision.connectToDot(this.previousRevisionOnStage);
                 this._linesContainer.addChild(line);
             }
-            if(this.previousPublicRevisionOnStage && revision.revisionType === "public") {
+            if(this.previousPublicRevisionOnStage
+                && revision.revisionType === "public"
+                && this.previousPublicRevisionOnStage !== this.previousRevisionOnStage) {
                 var publicLine:createjs.Shape = revision.connectToDot(this.previousPublicRevisionOnStage);
                 this._linesContainer.addChild(publicLine);
             }
@@ -55,7 +57,7 @@ class RevisionTree extends createjs.Stage {
             xPos = e.currentTarget.x + canvasPosition.left + 50;
         }
 
-        let yPos = 20;
+        let yPos = canvasPosition.top + 20;
         $('.panel').css({left:xPos, top: yPos}).show();
         this.update();
     }
