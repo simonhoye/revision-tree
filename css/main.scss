@@ -2,15 +2,28 @@
 body {
     text-align: center;
     background-color: #f8f9f9;
-    canvas {
-        margin: 0 auto;
+    font-family: arial;
+    .health-panel {
+        background: #ffffff;
     }
-    .panel {
-        position: absolute;
-        background-color: #FFFFFF;
-        border: 2px solid #e7e7e7;
-        width: 300px;
-        height: 500px;
-        display: none;
+    div {
+        canvas {
+            margin: 0 auto;
+        }
+        .panel {
+            position: absolute;
+            background-color: #FFFFFF;
+            border: 2px solid #e7e7e7;
+            width: 300px;
+            height: 500px;
+            display: none;
+        }
     }
+
+}
+
+#chart1 {
+   width: 450px;
+   height: 200px;
+   position: relative;
 }

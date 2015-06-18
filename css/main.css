@@ -1,12 +1,20 @@
 body {
   text-align: center;
-  background-color: #f8f9f9; }
-  body canvas {
+  background-color: #f8f9f9;
+  font-family: arial; }
+  body .health-panel {
+    background: #ffffff; }
+  body div canvas {
     margin: 0 auto; }
-  body .panel {
+  body div .panel {
     position: absolute;
     background-color: #FFFFFF;
     border: 2px solid #e7e7e7;
     width: 300px;
     height: 500px;
     display: none; }
+
+#chart1 {
+  width: 450px;
+  height: 200px;
+  position: relative; }
